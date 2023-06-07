@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cuichan Airlines</title>
+    <link rel="stylesheet" type="text/css" href="estilotiendaonline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="divFijo" >
+        <div class="divLogo"></div>
+        <div class="divMenu">
+            <div class="divMenuItem">HOME</div>
+            <div class="divMenuItem">COREA</div>
+            <div class="divMenuItem">JAPÓN</div>
+            <div class="divMenuItem">CHINA</div>
+            <div class="divMenuItem">SHOP</div>
+        </div>
+    </div>
+
+    <div class="divInicial"></div>
+    <div class="divImagenMain" id="imagenMain"></div>
+    <div class="divSeparador"></div>
+
+    <div class="divPanel">
+        <div class="divPanelLateral"></div>
+        <div class="divPanelCentral">
+            <div class="divPanelCentralColumna">
+                <div class="divPanelCentralItemLargo" id="imagenCoreaPanel">
+                    <div class="divBottonPanel">
+                        <button id="buttonPanel">COREA</button>
+                    </div>
+                </div>
+                <div class="divPanelCentralItemCorto" id="imagenAnuncioPanel">
+                </div>
+            </div>
+            <div class="divPanelCentralColumna">
+                <div class="divPanelCentralItemCorto" id="imagenAnuncioPanel">
+                </div>
+                <div class="divPanelCentralItemLargo" id="imagenJaponPanel">
+                    <div class="divBottonPanel">
+                        <button id="buttonPanel">JAPÓN</button>
+                    </div>
+                </div>
+            </div>
+            <div class="divPanelCentralColumna">
+                <div class="divPanelCentralItemLargo" id="imagenChinaPanel">
+                    <div class="divBottonPanel">
+                        <button id="buttonPanel">CHINA</button>
+                    </div>
+                </div>
+                <div class="divPanelCentralItemCorto" id="imagenAnuncioPanel">
+                </div>
+            </div>
+        </div>
+
+        <div class="divPanelLateral"></div>
+    </div>
+
+    <div class="divSeparador"></div>
+
+    <div class="divFinalPagina">
+        <div class="divFinalPaginaCentrado">
+            <h3><strong>¿Tienes alguna pregunta que desees hacer?</strong></h3>
+            <p>
+                Genial!!!  Ven a visitarnos en nuestra tienda ubicada en el octavo piso del edificio más divertido de todo <strong>Nueva York, 
+                en la calle Hudson</strong>. Te aseguro que no podrás perderte nuestro local. Pero si prefieres la comodidad de tu hogar, 
+                simplemente toma tu teléfono y marca el número: <strong>(+1) 96 716 6879</strong>. Nuestro equipo de expertos estará encantado de 
+                atenderte y resolver todas tus inquietudes.
+            </p>
+            <div>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.snapchat.com/"><i class="fab fa-snapchat-ghost"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <h5>
+                Copyright © 2023 CUICHAN AIRLINES. All rights reserved. 
+            </h5>
+        </div>
+    </div>
+
+    <script>
+        var imagenes = ['wiki/avionMain.jpg', 'wiki/japonMain.jpg', 'wiki/coreaMain.jpg', 'wiki/chinaMain.jpg'];
+        var indice = 0;
+        function cambiarImagen() {
+            var imagenId = document.getElementById('imagenMain');
+            imagenId.style.backgroundImage = 'url(' + imagenes[indice] + ')';
+            indice = (indice + 1) % imagenes.length;
+        }
+        setInterval(cambiarImagen, 5000);
+        cambiarImagen();
+    </script>
+</body>
+
+</html>

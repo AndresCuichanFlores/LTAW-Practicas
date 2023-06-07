@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.divSeparador{
+    width: 100%;
+    height: 40px;
+}
+
+.divFijo {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.divLogo {
+    width: 20%;
+    height: 100%;
+    background-image: url('wiki/logoMain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.divMenu {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.divInicial {
+    width: 100%;
+    height: 120px;
+}
+
+.divMenuItem {
+    font-family: 'Cinzel', serif;
+    color: #092852; 
+}
+
+.divImagenMain {
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+
+.divPanel{
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.divPanelLateral{
+    width: 10%;
+    height: 100%;
+}
+
+.divPanelCentral{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    gap: 40px;
+}
+
+.divPanelCentralColumna{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.divPanelCentralItemLargo{
+    width: 100%;
+    height: 60%;
+    transition: transform 0.3s ease;
+}
+
+.divPanelCentralItemLargo:hover {
+    transform: scale(1.2);
+}
+
+.divPanelCentralItemCorto{
+    width: 100%;
+    height: 40%;
+    transition: transform 0.3s ease;
+}
+
+.divPanelCentralItemCorto:hover {
+    transform: scale(1.3);
+}
+
+.divBottonPanel{
+    width: 100%;
+    height: 13%;
+    margin-top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.divFinalPagina {
+    display: flex;
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divFinalPaginaCentrado {
+    width: 70%;
+    height: 70%;
+    font-size: small;
+    color: #555555;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+
+
+#imagenCoreaPanel {
+    background-image: url('wiki/coreaPanel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenJaponPanel {
+    background-image: url('wiki/japonPanel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenChinaPanel {
+    background-image: url('wiki/chinaPanel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenAnuncioPanel {
+    background-image: url('wiki/avionMain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#buttonPanel{
+    width: 50%;
+    height: 100%;
+    font-family: 'Cinzel', serif;
+    color: #092852; 
+    background-color: #fff;
+    font-size: medium;
+    border: none;
+}
+
+#buttonPanel:hover {
+    background-color: rgb(223, 85, 85);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
