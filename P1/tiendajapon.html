@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <title>Cuichan Airlines</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="estilotiendaonline.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="estilotiendajapon.css">
+    <link rel="icon" href="imagenes/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -18,47 +17,41 @@
             <div class="divMenuItem" onclick="window.location.href = 'tiendaonline.html';">HOME</div>
             <div class="divMenuItem" onclick="window.location.href = 'tiendacorea.html';">COREA</div>
             <div class="divMenuItem" onclick="window.location.href = 'tiendajapon.html';">JAPÓN</div>
-            <div class="divMenuItem" onclick="window.location.href = 'tiendachina.html';">CHINA</div>
+            <div class="divMenuItem"onclick="window.location.href = 'tiendachina.html';">CHINA</div>
         </div>
     </div>
 
     <div class="divInicial"></div>
-    <div class="divImagenMain" id="imagenMain"></div>
     <div class="divSeparador"></div>
 
-    <div class="divPanel">
-        <div class="divPanelLateral"></div>
-        <div class="divPanelCentral">
-            <div class="divPanelCentralColumna">
-                <div class="divPanelCentralItemLargo" id="imagenCoreaPanel">
-                    <div class="divBottonPanel">
-                        <button id="buttonPanel" onclick="window.location.href = 'tiendacorea.html';">COREA</button>
-                    </div>
-                </div>
-                <div class="divPanelCentralItemCorto" id="imagenAnuncioPanel">
+    <div class="divMainJapon">
+        <div class="divMainColumnaDerecha">
+            <div class="divCiudadItem">
+                <div class="itemCiudadImagen" id="imagenCiudadTokio"></div>
+                <div class="itemCiudadInfo">
+                    <button class="botonAddShop">Comprar</button>
                 </div>
             </div>
-            <div class="divPanelCentralColumna">
-                <div class="divPanelCentralItemCorto" id="imagenLogoPanel">
-                </div>
-                <div class="divPanelCentralItemLargo" id="imagenJaponPanel">
-                    <div class="divBottonPanel">
-                        <button id="buttonPanel" onclick="window.location.href = 'tiendajapon.html';">JAPÓN</button>
-                    </div>
+            <div class="divCiudadItem">
+                <div class="itemCiudadImagen" id="imagenCiudadKobe"></div>
+                <div class="itemCiudadInfo">
+                     <button class="botonAddShop">Comprar</button>
                 </div>
             </div>
-            <div class="divPanelCentralColumna">
-                <div class="divPanelCentralItemLargo" id="imagenChinaPanel">
-                    <div class="divBottonPanel">
-                        <button id="buttonPanel" onclick="window.location.href = 'tiendachina.html';">CHINA</button>
-                    </div>
+            <div class="divCiudadItem">
+                <div class="itemCiudadImagen" id="imagenCiudadKyoto"></div>
+                <div class="itemCiudadInfo">
+                    <button class="botonAddShop">Comprar</button>
                 </div>
-                <div class="divPanelCentralItemCorto" id="imagenMainPanel">
+            </div>
+            <div class="divCiudadItem">
+                <div class="itemCiudadImagen" id="imagenCiudadFukuoka"></div>
+                <div class="itemCiudadInfo">
+                    <button class="botonAddShop">Comprar</button>
                 </div>
             </div>
         </div>
-
-        <div class="divPanelLateral"></div>
+        <div class="divMainColumnaIzquierda"></div>
     </div>
 
     <div class="divSeparador"></div>
@@ -84,18 +77,7 @@
             </h5>
         </div>
     </div>
-
-    <script>
-        var imagenes = ['imagenes/avionMain.jpg', 'imagenes/japonMain.jpg', 'imagenes/coreaMain.jpg', 'imagenes/chinaMain.jpg'];
-        var indice = 0;
-        function cambiarImagen() {
-            var imagenId = document.getElementById('imagenMain');
-            imagenId.style.backgroundImage = 'url(' + imagenes[indice] + ')';
-            indice = (indice + 1) % imagenes.length;
-        }
-        setInterval(cambiarImagen, 5000);
-        cambiarImagen();
-    </script>
+    
 </body>
 
 </html>

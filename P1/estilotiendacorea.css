@@ -1,0 +1,82 @@
+
+.divMainCorea{
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.divMainColumnaIzquierda{
+    width: 40%;
+    height: 100%;
+    background-image: url('imagenes/mapaCorea.jpg');
+    background-size: cover;
+    
+}
+
+.divMainColumnaDerecha{
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.divCiudadItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemCiudadImagen{
+    width: 100%;
+    height: 60%;
+}
+
+.itemCiudadInfo{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonAddShop{
+    width: 50%;
+    height: 30%;
+    font-family: 'Cinzel', serif;
+    color: #fff; 
+    background-color: rgb(223, 85, 85);
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+}
+
+.botonAddShop:hover {
+    background-color: rgb(14, 255, 1);
+    color: #092852;
+}
+
+
+#imagenCiudadSeul {
+    background-image: url('imagenes/ciudadSeul.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadDaejeon {
+    background-image: url('imagenes/ciudadDaejeon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadJeonju {
+    background-image: url('imagenes/ciudadJeonju.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadBusan {
+    background-image: url('imagenes/ciudadBusan.jpg');
+    background-size: cover;
+    background-position: center;
+}

@@ -112,7 +112,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .divFinalPagina {
@@ -154,7 +153,19 @@ body {
 }
 
 #imagenAnuncioPanel {
+    background-image: url('imagenes/rebajasPanel.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenMainPanel {
     background-image: url('imagenes/avionMain.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenLogoPanel {
+    background-image: url('imagenes/logoMain.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -167,6 +178,8 @@ body {
     background-color: #fff;
     font-size: medium;
     border: none;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 #buttonPanel:hover {
