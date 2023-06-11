@@ -23,9 +23,10 @@ body {
 .divLogo {
     width: 20%;
     height: 100%;
-    background-image: url('wiki/logoMain.jpg');
+    background-image: url('imagenes/logoMain.jpg');
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .divMenu {
@@ -44,7 +45,8 @@ body {
 
 .divMenuItem {
     font-family: 'Cinzel', serif;
-    color: #092852; 
+    color: #092852;
+    cursor: pointer;
 }
 
 .divImagenMain {
@@ -134,25 +136,25 @@ body {
 
 
 #imagenCoreaPanel {
-    background-image: url('wiki/coreaPanel.jpg');
+    background-image: url('imagenes/coreaPanel.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #imagenJaponPanel {
-    background-image: url('wiki/japonPanel.jpg');
+    background-image: url('imagenes/japonPanel.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #imagenChinaPanel {
-    background-image: url('wiki/chinaPanel.jpg');
+    background-image: url('imagenes/chinaPanel.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #imagenAnuncioPanel {
-    background-image: url('wiki/avionMain.jpg');
+    background-image: url('imagenes/avionMain.jpg');
     background-size: cover;
     background-position: center;
 }
