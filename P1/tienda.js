@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const puerto = 9000;
 const pagina = 'tiendaonline.html';
-const paginaEror = 'imagenes/error404.jpg';
+const paginaEror = 'tiendaerror.html';
 
 
 const server = http.createServer((req, res) => {
