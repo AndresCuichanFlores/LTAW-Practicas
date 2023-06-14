@@ -1,0 +1,83 @@
+
+.divMainChina{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    background-image: url('imagenes/mapaChina.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.divMainColumnaIzquierda{
+    width: 40%;
+    height: 100%;
+    
+}
+
+.divMainColumnaDerecha{
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.divCiudadItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.itemCiudadImagen{
+    width: 100%;
+    height: 60%;
+}
+
+.itemCiudadInfo{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonAddShop{
+    width: 50%;
+    height: 30%;
+    font-family: 'Cinzel', serif;
+    color: #fff; 
+    background-color: rgb(223, 85, 85);
+    font-size: medium;
+    border: none;
+    border-radius: 10px;
+}
+
+.botonAddShop:hover {
+    background-color: rgb(14, 255, 1);
+    color: #092852;
+}
+
+
+#imagenCiudadPekin {
+    background-image: url('imagenes/ciudadPekin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadHubei {
+    background-image: url('imagenes/ciudadHubei.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadShanghai {
+    background-image: url('imagenes/ciudadShanghai.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadTibet {
+    background-image: url('imagenes/ciudadTibet.jpg');
+    background-size: cover;
+    background-position: center;
+}

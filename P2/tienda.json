@@ -1,0 +1,103 @@
+{
+    "usuarios": [
+        {
+            "nombreUsuario": "root",
+            "nombreReal": "manager",
+            "correo": "manager@gmail.com"
+        },
+        {
+            "nombreUsuario": "easyfour",
+            "nombreReal": "andres",
+            "correo": "andresxp@gmail.com"
+        }
+    ],
+    "productos": [
+        {
+            "nombre": "seul",
+            "descripcion": "viaje a corea del sur, ciudad seul",
+            "precio": 1500,
+            "stock": 10
+        },
+        {
+            "nombre": "daejeon",
+            "descripcion": "viaje a corea del sur, ciudad daejeon",
+            "precio": 1100,
+            "stock": 5
+        },
+        {
+            "nombre": "jeonju",
+            "descripcion": "viaje a corea del sur, ciudad jeonju",
+            "precio": 900,
+            "stock": 6
+        },
+        {
+            "nombre": "busan",
+            "descripcion": "viaje a corea del sur, ciudad busan",
+            "precio": 1200,
+            "stock": 2
+        },
+        {
+            "nombre": "tokio",
+            "descripcion": "viaje a japon, ciudad tokio",
+            "precio": 2400,
+            "stock": 9
+        },
+        {
+            "nombre": "kobe",
+            "descripcion": "viaje a japon, ciudad kobe",
+            "precio": 2000,
+            "stock": 5
+        },
+        {
+            "nombre": "kyoto",
+            "descripcion": "viaje a japon, ciudad kyoto",
+            "precio": 1700,
+            "stock": 4
+        },
+        {
+            "nombre": "fukuoka",
+            "descripcion": "viaje a japon, ciudad fukuoka",
+            "precio": 1600,
+            "stock": 2
+        },
+        {
+            "nombre": "pekin",
+            "descripcion": "viaje a china, ciudad pekin",
+            "precio": 1300,
+            "stock": 7
+        },
+        {
+            "nombre": "hubei",
+            "descripcion": "viaje a china, ciudad hubei",
+            "precio": 800,
+            "stock": 7
+        },
+        {
+            "nombre": "shanghai",
+            "descripcion": "viaje a china, ciudad shanghai",
+            "precio": 2300,
+            "stock": 5
+        },
+        {
+            "nombre": "tibet",
+            "descripcion": "viaje a china, ciudad tibet",
+            "precio": 1300,
+            "stock": 2
+        }
+    ],
+    "pedidos": [
+        {
+            "nombreUsuario": "easyfour",
+            "direccionEnvio": "Calle plaza mayor 312",
+            "numeroTarjeta": "1234-5648-7012-3546",
+            "productos": ["seul"]
+        },
+        {
+            "nombreUsuario": "root",
+            "direccionEnvio": "calle america",
+            "numeroTarjeta": "1656-5872-1098-7654",
+            "productos": ["tokio"]
+        }
+    ]
+}
+  
