@@ -40,18 +40,24 @@
     justify-content: center;
 }
 
-.botonAddShop{
+.divFormBoton{
     width: 50%;
     height: 30%;
+}
+
+.formBoton{
     font-family: 'Cinzel', serif;
     color: #fff; 
+    width: 100%;
+    height: 100%;
     background-color: rgb(223, 85, 85);
     font-size: medium;
     border: none;
     border-radius: 10px;
 }
 
-.botonAddShop:hover {
+.formBoton:hover {
+    cursor: pointer;
     background-color: rgb(14, 255, 1);
     color: #092852;
 }

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+.divShopList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    height: 600px;
+    width: 100%;
+    background-image: url('imagenes/listaCompra.jpg');
+    background-size: cover;
+}
+  
+.productoItem {
+    display: flex;
+    border-radius: 40px;
+    overflow: auto;
+    color: #092852;
+    font-weight: bold;
+    background-color: bisque;
+    text-align: center;
+}
+
+.itemImagen{
+    height: 100%;
+    width: 43%;
+}
+
+.itemInfo{
+    height: 100%;
+    width: 50%;
+    color: #092852;
+    justify-content: center;
+    font-family: 'Cinzel', serif;
+}
+
+.imagenListaCompraVacia{
+    height: 600px;
+    width: 100%;
+    background-image: url('imagenes/listaCompraVacia.jpg');
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color: #092852;
+    font-weight: bold;
+}
+
+#intPrecio{
+    color: red;
+}
+
+#imagenCiudadSeul {
+    background-image: url('imagenes/ciudadSeul.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadDaejeon {
+    background-image: url('imagenes/ciudadDaejeon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadJeonju {
+    background-image: url('imagenes/ciudadJeonju.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadBusan {
+    background-image: url('imagenes/ciudadBusan.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadTokio {
+    background-image: url('imagenes/ciudadTokio.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadKyoto {
+    background-image: url('imagenes/ciudadKyoto.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadKobe {
+    background-image: url('imagenes/ciudadKobe.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadFukuoka {
+    background-image: url('imagenes/ciudadFukuoka.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#imagenCiudadPekin {
+    background-image: url('imagenes/ciudadPekin.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadHubei {
+    background-image: url('imagenes/ciudadHubei.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadShanghai {
+    background-image: url('imagenes/ciudadShanghai.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#imagenCiudadTibet {
+    background-image: url('imagenes/ciudadTibet.jpg');
+    background-size: cover;
+    background-position: center;
+}

@@ -18,6 +18,7 @@
             <div class="divMenuItem" onclick="window.location.href = 'tiendacorea.html';">COREA</div>
             <div class="divMenuItem" onclick="window.location.href = 'tiendajapon.html';">JAPÓN</div>
             <div class="divMenuItem"onclick="window.location.href = 'tiendachina.html';">CHINA</div>
+            <div class="divMenuItem" onclick="window.location.href = 'tiendalistacompra.html';">SHOP</div>
         </div>
     </div>
 
@@ -29,25 +30,37 @@
             <div class="divCiudadItem">
                 <div class="itemCiudadImagen" id="imagenCiudadTokio"></div>
                 <div class="itemCiudadInfo">
-                    <button class="botonAddShop">Comprar</button>
+                    <form action="/producto" method="get" class="divFormBoton">
+                        <input type="text" name="nombre" value="tokio" hidden/>
+                        <button  class="formBoton" type="submit">COMPRAR</button>
+                    </form>
                 </div>
             </div>
             <div class="divCiudadItem">
                 <div class="itemCiudadImagen" id="imagenCiudadKobe"></div>
                 <div class="itemCiudadInfo">
-                     <button class="botonAddShop">Comprar</button>
+                    <form action="/producto" method="get" class="divFormBoton">
+                        <input type="text" name="nombre" value="kobe" hidden/>
+                        <button  class="formBoton" type="submit">COMPRAR</button>
+                    </form>
                 </div>
             </div>
             <div class="divCiudadItem">
                 <div class="itemCiudadImagen" id="imagenCiudadKyoto"></div>
                 <div class="itemCiudadInfo">
-                    <button class="botonAddShop">Comprar</button>
+                    <form action="/producto" method="get" class="divFormBoton">
+                        <input type="text" name="nombre" value="kyoto" hidden/>
+                        <button  class="formBoton" type="submit">COMPRAR</button>
+                    </form>
                 </div>
             </div>
             <div class="divCiudadItem">
                 <div class="itemCiudadImagen" id="imagenCiudadFukuoka"></div>
                 <div class="itemCiudadInfo">
-                    <button class="botonAddShop">Comprar</button>
+                    <form action="/producto" method="get" class="divFormBoton">
+                        <input type="text" name="nombre" value="fukuoka" hidden/>
+                        <button  class="formBoton" type="submit">COMPRAR</button>
+                    </form>
                 </div>
             </div>
         </div>

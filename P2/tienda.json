@@ -14,87 +14,99 @@
     "productos": [
         {
             "nombre": "seul",
-            "descripcion": "viaje a corea del sur, ciudad seul",
+            "descripcion": "viaje a seul, corea del sur",
             "precio": 1500,
+            "imagen": "imagenCiudadSeul",
             "stock": 10
         },
         {
             "nombre": "daejeon",
-            "descripcion": "viaje a corea del sur, ciudad daejeon",
+            "descripcion": "viaje a daejeon, corea del sur",
             "precio": 1100,
+            "imagen": "imagenCiudadDaejeon",
             "stock": 5
         },
         {
             "nombre": "jeonju",
-            "descripcion": "viaje a corea del sur, ciudad jeonju",
+            "descripcion": "viaje a jeonju, corea del sur",
             "precio": 900,
+            "imagen": "imagenCiudadJeonju",
             "stock": 6
         },
         {
             "nombre": "busan",
-            "descripcion": "viaje a corea del sur, ciudad busan",
+            "descripcion": "viaje a busan, corea del sur",
             "precio": 1200,
+            "imagen": "imagenCiudadBusan",
             "stock": 2
         },
         {
             "nombre": "tokio",
-            "descripcion": "viaje a japon, ciudad tokio",
+            "descripcion": "viaje a tokio, japon",
             "precio": 2400,
+            "imagen": "imagenCiudadTokio",
             "stock": 9
         },
         {
             "nombre": "kobe",
-            "descripcion": "viaje a japon, ciudad kobe",
+            "descripcion": "viaje a kobe, japon",
             "precio": 2000,
+            "imagen": "imagenCiudadKobe",
             "stock": 5
         },
         {
             "nombre": "kyoto",
-            "descripcion": "viaje a japon, ciudad kyoto",
+            "descripcion": "viaje a kyoto, japon",
             "precio": 1700,
+            "imagen": "imagenCiudadKyoto",
             "stock": 4
         },
         {
             "nombre": "fukuoka",
-            "descripcion": "viaje a japon, ciudad fukuoka",
+            "descripcion": "viaje a fukuoka, japon",
             "precio": 1600,
+            "imagen": "imagenCiudadFukuoka",
             "stock": 2
         },
         {
             "nombre": "pekin",
-            "descripcion": "viaje a china, ciudad pekin",
+            "descripcion": "viaje a pekin, china",
             "precio": 1300,
+            "imagen": "imagenCiudadPekin",
             "stock": 7
         },
         {
             "nombre": "hubei",
-            "descripcion": "viaje a china, ciudad hubei",
+            "descripcion": "viaje a hubei, china",
             "precio": 800,
+            "imagen": "imagenCiudadHubei",
             "stock": 7
         },
         {
             "nombre": "shanghai",
-            "descripcion": "viaje a china, ciudad shanghai",
+            "descripcion": "viaje a shanghai, china",
             "precio": 2300,
+            "imagen": "imagenCiudadShanghai",
             "stock": 5
         },
         {
             "nombre": "tibet",
-            "descripcion": "viaje a china, ciudad tibet",
+            "descripcion": "viaje a tibet, china",
             "precio": 1300,
+            "imagen": "imagenCiudadTibet",
             "stock": 2
         }
     ],
     "pedidos": [
         {
             "nombreUsuario": "easyfour",
-            "direccionEnvio": "Calle plaza mayor 312",
+            "direccionEnvio": "Aeropuerto Madrid",
             "numeroTarjeta": "1234-5648-7012-3546",
             "productos": ["seul"]
         },
         {
             "nombreUsuario": "root",
-            "direccionEnvio": "calle america",
+            "direccionEnvio": "Aeropuerto Miami",
             "numeroTarjeta": "1656-5872-1098-7654",
             "productos": ["tokio"]
         }
