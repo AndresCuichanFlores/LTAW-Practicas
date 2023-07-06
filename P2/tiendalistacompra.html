@@ -30,8 +30,6 @@
 
     LISTA_COMPRA
 
-    <div class="divSeparador"></div>
-
     <div class="divFinalPagina">
         <div class="divFinalPaginaCentrado">
             <h3><strong>¿Tienes alguna pregunta que desees hacer?</strong></h3>
@@ -54,6 +52,67 @@
         </div>
     </div>
 
-</body>
+    <div id="popupCompra">
+        <div class="popupItemTituloCompra">
+            <span>COMPRA</span>
+        </div>
+        <form class="popupItemFormulario" action="/finalizarCompra" method="get" class="divFormBoton">
+            <div class="popupItemDatosRecibo">
+                <span>Dirección de envío:<br></span>
+                <input class="inputStyle" type="text" name="dirreccionEnvio" placeholder="Aeropuerto XXXX"/>
+                <span><br>Numero de la tarjeta:<br></span>
+                <input class="inputStyle" type="text" name="numeroTarjeta" placeholder="XXXX-XXXX-XXXX-XXXX"/>
+                <span><br>Lista Compra:</span>
+                <br>
+                <div id="datosListaCompra">
+                </div>
+            </div>
+            <div class="popupItemBotonPagar">
+                <button class="buttonCompra" type="submit" onclick="closePopupFinalizarCompra()">PAGAR</button>
+            </div>
+        </form>
+    </div>
 
+    <div id="popupCompraExito">
+        <div class="popupItemTituloCompraExito">
+            <span>!COMPRA REALIZADA CON EXITO!</span>
+        </div>
+        <div class="popupItemBotonCerrar">
+            <button class="buttonCompra" onclick="closePopupCompraExito()">CERRAR</button>
+        </div>
+    </div>
+
+    <script>
+        const datosListaCompra = document.getElementById("datosListaCompra");
+        function openPopupFinalizarCompra() {
+            document.getElementById("popupCompra").style.display = "block";
+            document.getElementById('buttonFinalizarCompra').disabled = true;
+            var precioTotal = 0;
+            const m = new XMLHttpRequest();
+            m.onreadystatechange = () => {
+                if (m.readyState==4) {
+                    if (m.status==200) {
+                        let pedidos = JSON.parse(m.responseText)
+                        for (let i=0; i < pedidos.length; i++) {
+                            datosListaCompra.innerHTML += pedidos[i].descripcion + " --> " + pedidos[i].precio + "$ <br>";
+                            precioTotal += pedidos[i].precio;
+                        }
+                        datosListaCompra.innerHTML += "<b>TOTAL = " + precioTotal + "$</b>";
+                    }
+                }
+            }
+            m.open("GET","/datosListaCompra", true);
+            m.send();
+        }
+
+        function closePopupFinalizarCompra() {
+            document.getElementById("popupCompra").style.display = "none";
+            document.getElementById("popupCompraExito").style.display = "block";
+        }
+
+        function closePopupCompraExito() {
+            document.getElementById("popupCompraExito").style.display = "none";
+        }
+    </script>
+</body>
 </html>

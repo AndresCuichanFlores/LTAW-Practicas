@@ -3,95 +3,97 @@
         {
             "nombreUsuario": "root",
             "nombreReal": "manager",
-            "correo": "manager@gmail.com"
+            "email": "manager@gmail.com",
+            "password": "root1!"
         },
         {
             "nombreUsuario": "easyfour",
             "nombreReal": "andres",
-            "correo": "andresxp@gmail.com"
+            "email": "andresxp0016@gmail.com",
+            "password": "ass41"
         }
     ],
     "productos": [
         {
             "nombre": "seul",
-            "descripcion": "viaje a seul, corea del sur",
+            "descripcion": "Viaje a Seul, Corea del sur",
             "precio": 1500,
             "imagen": "imagenCiudadSeul",
             "stock": 10
         },
         {
             "nombre": "daejeon",
-            "descripcion": "viaje a daejeon, corea del sur",
+            "descripcion": "Viaje a Daejeon, Corea del sur",
             "precio": 1100,
             "imagen": "imagenCiudadDaejeon",
             "stock": 5
         },
         {
             "nombre": "jeonju",
-            "descripcion": "viaje a jeonju, corea del sur",
+            "descripcion": "Viaje a Jeonju, Corea del sur",
             "precio": 900,
             "imagen": "imagenCiudadJeonju",
             "stock": 6
         },
         {
             "nombre": "busan",
-            "descripcion": "viaje a busan, corea del sur",
+            "descripcion": "Viaje a Busan, Corea del sur",
             "precio": 1200,
             "imagen": "imagenCiudadBusan",
             "stock": 2
         },
         {
             "nombre": "tokio",
-            "descripcion": "viaje a tokio, japon",
+            "descripcion": "Viaje a Tokio, Japon",
             "precio": 2400,
             "imagen": "imagenCiudadTokio",
             "stock": 9
         },
         {
             "nombre": "kobe",
-            "descripcion": "viaje a kobe, japon",
+            "descripcion": "Viaje a Kobe, Japon",
             "precio": 2000,
             "imagen": "imagenCiudadKobe",
             "stock": 5
         },
         {
             "nombre": "kyoto",
-            "descripcion": "viaje a kyoto, japon",
+            "descripcion": "Viaje a Kyoto, Japon",
             "precio": 1700,
             "imagen": "imagenCiudadKyoto",
             "stock": 4
         },
         {
             "nombre": "fukuoka",
-            "descripcion": "viaje a fukuoka, japon",
+            "descripcion": "Viaje a Fukuoka, Japon",
             "precio": 1600,
             "imagen": "imagenCiudadFukuoka",
             "stock": 2
         },
         {
             "nombre": "pekin",
-            "descripcion": "viaje a pekin, china",
+            "descripcion": "Viaje a Pekin, China",
             "precio": 1300,
             "imagen": "imagenCiudadPekin",
             "stock": 7
         },
         {
             "nombre": "hubei",
-            "descripcion": "viaje a hubei, china",
+            "descripcion": "Viaje a Hubei, China",
             "precio": 800,
             "imagen": "imagenCiudadHubei",
             "stock": 7
         },
         {
             "nombre": "shanghai",
-            "descripcion": "viaje a shanghai, china",
+            "descripcion": "Viaje a Shanghai, China",
             "precio": 2300,
             "imagen": "imagenCiudadShanghai",
             "stock": 5
         },
         {
             "nombre": "tibet",
-            "descripcion": "viaje a tibet, china",
+            "descripcion": "Viaje a Tibet, China",
             "precio": 1300,
             "imagen": "imagenCiudadTibet",
             "stock": 2
@@ -102,14 +104,90 @@
             "nombreUsuario": "easyfour",
             "direccionEnvio": "Aeropuerto Madrid",
             "numeroTarjeta": "1234-5648-7012-3546",
-            "productos": ["seul"]
+            "productos": [
+                "seul"
+            ]
         },
         {
             "nombreUsuario": "root",
             "direccionEnvio": "Aeropuerto Miami",
             "numeroTarjeta": "1656-5872-1098-7654",
-            "productos": ["tokio"]
+            "productos": [
+                "tokio"
+            ]
+        },
+        {
+            "nombreUsuario": "easyfour",
+            "direccionEnvio": "Aeropuerto de galicia",
+            "numeroTarjeta": "0254-2357-4757-2487",
+            "productos": [
+                "pekin",
+                "hubei",
+                "shanghai",
+                "tibet"
+            ]
+        },
+        {
+            "nombreUsuario": "easyfour",
+            "direccionEnvio": "Aeropuerto Los angeles",
+            "numeroTarjeta": "0459-3658-7812-7521",
+            "productos": [
+                "seul",
+                "daejeon",
+                "jeonju",
+                "busan",
+                "pekin",
+                "hubei",
+                "tibet",
+                "shanghai"
+            ]
+        },
+        {
+            "nombreUsuario": "easyfour",
+            "direccionEnvio": "Aeropuerto brasil",
+            "numeroTarjeta": "0444-5689-4712-4150",
+            "productos": [
+                "pekin",
+                "hubei"
+            ]
+        },
+        {
+            "nombreUsuario": "easyfour",
+            "direccionEnvio": "Aeropuerto urjc",
+            "numeroTarjeta": "1212-1313-1414-1515",
+            "productos": [
+                "kobe",
+                "tokio",
+                "shanghai",
+                "tibet"
+            ]
+        },
+        {
+            "nombreUsuario": "easyfour",
+            "direccionEnvio": "Aeropuerto urjc mostoles",
+            "numeroTarjeta": "1818-1919-2020-2424",
+            "productos": [
+                "kobe",
+                "tokio",
+                "shanghai",
+                "tibet",
+                "pekin",
+                "jeonju",
+                "busan",
+                "daejeon",
+                "seul"
+            ]
+        },
+        {
+            "nombreUsuario": "easyfour",
+            "direccionEnvio": "Aeropuerto sice",
+            "numeroTarjeta": "3637-3698-5687-1204",
+            "productos": [
+                "seul",
+                "daejeon",
+                "busan",
+                "jeonju"
+            ]
         }
     ]
 }
-  

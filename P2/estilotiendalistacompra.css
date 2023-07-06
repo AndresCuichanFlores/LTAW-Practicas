@@ -41,6 +41,78 @@
     background-size: cover;
 }
 
+.popupItemBotonPagar {
+    width: 100%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupItemTituloCompra {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: #092852;
+    font-weight: bold;
+    font-size: large;
+}
+
+.popupItemTituloCompraExito {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
+
+.popupItemBotonCerrar {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputStyle {
+    width: 98%;
+    height: 7%;
+    background-color: #ffffff;
+}
+
+.popupItemFormulario {
+    width: 100%;
+    height: 85%;
+}
+
+.divButtonFinalizarCompra{
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.popupItemDatosRecibo {
+    width: 100%;
+    height: 90%;
+    color: #565656;
+}
+
+.buttonCompra {
+    width: 100%;
+    height: 100%;
+    font-family: 'Cinzel', serif;
+    color: #ffffff; 
+    background-color: #000000;
+    font-size: small;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
 h1{
     text-align: center;
     color: #092852;
@@ -120,4 +192,61 @@ h1{
     background-image: url('imagenes/ciudadTibet.jpg');
     background-size: cover;
     background-position: center;
+}
+
+#popupCompra {
+    width: 22%;
+    height: 80%;
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 9999;
+    flex-direction: column;
+    border: 3px solid #092852;
+}
+
+#popupCompraExito{
+    width: 40%;
+    height: 10%;
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 9999;
+    flex-direction: column;
+    border: 3px solid green;
+}
+
+#buttonFinalizarCompra{
+    width: 70%;
+    height: 50%;
+    font-family: 'Cinzel', serif;
+    color: #ffffff; 
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #092852;
+}
+
+#datosListaCompra{
+    text-align: right
+}
+
+#buttonFinalizarCompra:hover {
+    background-color: rgb(223, 85, 85);
+}
+
+#buttonCompra:hover {
+    background-color: rgb(223, 85, 85);
 }

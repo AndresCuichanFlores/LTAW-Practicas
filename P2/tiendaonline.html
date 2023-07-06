@@ -16,10 +16,11 @@
         <div class="divLogo" onclick="window.location.href = 'tiendaonline.html';"></div>
         <div class="divMenu">
             <div class="divMenuItem" onclick="window.location.href = 'tiendaonline.html';">HOME</div>
-            <div class="divMenuItem" onclick="window.location.href = 'tiendacorea.html';">COREA</div>
-            <div class="divMenuItem" onclick="window.location.href = 'tiendajapon.html';">JAPÓN</div>
-            <div class="divMenuItem" onclick="window.location.href = 'tiendachina.html';">CHINA</div>
-            <div class="divMenuItem" onclick="window.location.href = 'tiendalistacompra.html';">SHOP</div>
+            <div class="divMenuItemDesactivado" id="tituloCorea" >COREA</div>
+            <div class="divMenuItemDesactivado" id="tituloJapon" >JAPÓN</div>
+            <div class="divMenuItemDesactivado" id="tituloChina" >CHINA</div>
+            <div class="divMenuItemDesactivado" id="tituloShop" >SHOP</div>
+            <div class="divMenuItem" id="valueLogin" onclick="openPopupLogin()">LOGIN</div>
         </div>
     </div>
 
@@ -33,7 +34,7 @@
             <div class="divPanelCentralColumna">
                 <div class="divPanelCentralItemLargo" id="imagenCoreaPanel">
                     <div class="divBottonPanel">
-                        <button id="buttonPanel" onclick="window.location.href = 'tiendacorea.html';">COREA</button>
+                        <button id="buttonPanel" onclick="window.location.href = 'https://es.wikipedia.org/wiki/Corea_del_Sur';">COREA</button>
                     </div>
                 </div>
                 <div class="divPanelCentralItemCorto" id="imagenAnuncioPanel">
@@ -44,14 +45,14 @@
                 </div>
                 <div class="divPanelCentralItemLargo" id="imagenJaponPanel">
                     <div class="divBottonPanel">
-                        <button id="buttonPanel" onclick="window.location.href = 'tiendajapon.html';">JAPÓN</button>
+                        <button id="buttonPanel" onclick="window.location.href = 'https://es.wikipedia.org/wiki/Jap%C3%B3n';">JAPÓN</button>
                     </div>
                 </div>
             </div>
             <div class="divPanelCentralColumna">
                 <div class="divPanelCentralItemLargo" id="imagenChinaPanel">
                     <div class="divBottonPanel">
-                        <button id="buttonPanel" onclick="window.location.href = 'tiendachina.html';">CHINA</button>
+                        <button id="buttonPanel" onclick="window.location.href = 'https://es.wikipedia.org/wiki/Rep%C3%BAblica_Popular_China';">CHINA</button>
                     </div>
                 </div>
                 <div class="divPanelCentralItemCorto" id="imagenMainPanel">
@@ -86,6 +87,23 @@
         </div>
     </div>
 
+    <div id="popupLogin">
+        <div class="popupItemTitulo">
+            <span>LOG IN</span>
+        </div>
+        <form class="popupItemLogin" action="/signin" method="get" class="divFormBoton">
+            <div class="popupItemDatos">
+                <span>Email:<br></span>
+                <input class="recuadroInput" type="text" name="email" placeholder="Enter Email"/>
+                <span><br>Password:<br></span>
+                <input class="recuadroInput" type="password" name="password" placeholder="Enter Password"/>
+            </div>
+            <div class="popupItemSignin">
+                <button class="buttonSignin" type="submit" onclick="closePopupLogin()">Sign In</button>
+            </div>
+        </form>
+    </div>
+
     <script>
         var imagenes = ['imagenes/avionMain.jpg', 'imagenes/japonMain.jpg', 'imagenes/coreaMain.jpg', 'imagenes/chinaMain.jpg'];
         var indice = 0;
@@ -96,6 +114,40 @@
         }
         setInterval(cambiarImagen, 5000);
         cambiarImagen();
+
+        if(document.getElementById("valueLogin").textContent !== "LOGIN"){
+            var tituloCorea = document.getElementById("tituloCorea");
+            var tituloJapon = document.getElementById("tituloJapon");
+            var tituloChina = document.getElementById("tituloChina");
+            var tituloShop = document.getElementById("tituloShop");
+            tituloCorea.className = "divMenuItem";
+            tituloJapon.className = "divMenuItem";
+            tituloChina.className = "divMenuItem";
+            tituloShop.className = "divMenuItem";
+            tituloCorea.onclick = function() {
+                window.location.href = 'tiendacorea.html';
+            };
+            tituloJapon.onclick = function() {
+                window.location.href = 'tiendajapon.html';
+            };
+            tituloChina.onclick = function() {
+                window.location.href = 'tiendachina.html';
+            };
+            tituloShop.onclick = function() {
+                window.location.href = 'tiendalistacompra.html';
+            };
+        }
+
+        function openPopupLogin() {
+            if(document.getElementById("valueLogin").textContent === "LOGIN"){
+                document.getElementById("popupLogin").style.display = "block";
+            }
+        }
+
+        function closePopupLogin() {
+            document.getElementById("popupLogin").style.display = "none";
+        }
+
     </script>
 </body>
 
